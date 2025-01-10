@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Rubik+Vinyl&display=swap');
+
+.rubik {
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-reg {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-ita {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body{
+  margin: 0;
+  padding: 10px;
+  background-color: #7C444F;
+  color: #F39E60;
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+}
+
+.loading img{
+  filter: invert(100%);
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: auto;
+  width: 5%;
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer{
+  padding: 0px 20% 0px 20%;
+}
+
+.submitForm{
+  display: flex;
+  justify-content: center;
+}
+
+.submitFormInner{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitFormInner input{
+  border: none;
+  padding: 20px;
+  width: 50vw;
+  background-color: #64343e;
+  color: #d6bca9;
+  outline: none;
+}
+
+.submitFormInner input:hover{
+  background-color: #552b34;
+}
+
+.submitFormInner input:focus{
+  background-color: #552b34;
+}
+
+.submitFormInner button{
+  width: 50px;
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4e2830;
+  color: #d6bca9;
+  outline: none;
+}
+
+.submitFormInner button:hover{
+  background-color: #552b34;
+}
+
+.submitFormInner button:focus{
+  background-color: #552b34;
+}
