@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div class="mainContainer">
         <div class="heading">
-          <Tilt options={{ tiltReverse: false, transitionSpeed: 1, tiltMaxAngleX: 1, tiltMaxAngleY: 1 }}>
+          <Tilt options={{ tiltReverse: false }}>
             <h1 class="dm-ita">Gemini API Bot</h1>
           </Tilt>
         </div> 
@@ -58,7 +58,9 @@ export default function Home() {
 
           <form onSubmit={sendMessage} class="submitFormInner">
             <input type="text" value={prompt} onChange={({ target }) => setPrompt(target.value)} />
-            <button type="submit" class="sendMsg">Send</button>
+
+              <button type="submit" class="sendMsg">Send</button>
+
           </form>
 
       </div>
