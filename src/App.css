@@ -84,6 +84,10 @@ body{
   background-color: #552b34;
 }
 
+.submitFormInner input::placeholder{
+  color: #d6bca9b9;
+}
+
 .submitFormInner button{
   width: 50px;
   border: none;
@@ -100,4 +104,60 @@ body{
 
 .submitFormInner button:focus{
   background-color: #552b34;
+}
+
+.responseBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #4e2830;
+}
+
+.hidden{
+  display: none;
+}
+
+@media (max-width: 700px){
+  .mainContainer{
+    padding: 5px;
+  }
+  .submitFormInner input{
+    width: 80.5vw
+  }
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.fade-in-response {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.animated{
+  transition: 0.1s;
+}
+
+.animated:hover{
+
+
 }
