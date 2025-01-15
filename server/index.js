@@ -24,7 +24,7 @@ const secret1 = process.env.SUPERSECRETWORD; //jwt secret
 const app = express()
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'http://192.168.137.1:3000', 'http://192.168.0.27:3000', 'http://192.168.1.198:3000'],
+    origin: ['http://localhost:3000', 'http://192.168.137.1:3000', 'http://192.168.0.27:3000', 'http://192.168.1.198:3000', 'https://gemini-api-react-2g37.vercel.app/'],
     methods: ['GET', 'POST'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],

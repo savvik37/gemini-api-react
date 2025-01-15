@@ -21,7 +21,7 @@ export default function Home() {
         document.getElementById("responseBoxId").classList.add('hidden');
         const msg = prompt 
         setLoading(false)
-        const res = await axios.post(`${REACT_APP_API_BASE_URL}/sendmsg`, { prompt: msg })
+        const res = await axios.post(`https://gemini-api-react-2g37.vercel.app:3001/sendmsg`, { prompt: msg })
         console.log(res.data.response)
         setResponse(res.data.response)
         setPrompt("")
