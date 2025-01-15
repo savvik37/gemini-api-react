@@ -58,6 +58,6 @@ app.get("/", (req, res)=>{
     res.json("server says hi u little cunt")
 })
 
-app.listen(3001, '0.0.0.0', ()=>{
+app.listen(3001, ()=>{
     console.log("listening!");
 })
