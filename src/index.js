@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from "react-router";
 import './App.css'
-import { AuthProvider } from './context/AuthProvider';
-import AuthContext from './context/AuthProvider';
-import SignUp from "./signup"
-import Login from './login';
+import { AuthProvider } from './context/AuthProvider.js';
+import AuthContext from './context/AuthProvider.js';
+import SignUp from "./signup.js"
+import Login from './login.js';
 import Home from './home.js'
 
 const App = () => {

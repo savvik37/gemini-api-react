@@ -40,7 +40,7 @@ export default function Home() {
     <div class="mainContainer">
       <div class="heading">
         <Tilt tiltReverse={true}>
-          <h1 class="dm-ita rounded">Gemini API Bot</h1>
+          <h1 class="dm-ita rounded">Gemini API Test</h1>
         </Tilt>
       </div>
 

@@ -53,6 +53,7 @@ a:link:hover{
 .loading{
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .loading img{
