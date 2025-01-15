@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&display=swap');
 
 .rubik {
   font-family: "Rubik Vinyl", serif;
@@ -18,11 +18,36 @@
   font-style: italic;
 }
 
+.raleway {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.zoom:hover{
+  scale: 1.05;
+}
+
 body{
   margin: 0;
   padding: 10px;
   background-color: #7C444F;
   color: #e8ab7f;
+}
+
+body:link{
+  color: #4e2830
+}
+
+a:link{
+  color: #ffe3d1
+  
+}
+
+a:link:hover{
+  color: #fd9356
 }
 
 .loading{
@@ -38,6 +63,8 @@ body{
   animation-timing-function: linear;
   height: auto;
   width: 5%;
+  filter: brightness(0) saturate(100%) invert(97%) sepia(60%) saturate(4498%) hue-rotate(302deg) brightness(100%) contrast(82%);
+  margin-bottom: 20px;
 }
 
 @keyframes spin {
@@ -50,6 +77,11 @@ body{
   justify-content: center;
 }
 
+.heading h1{
+
+  padding: 10px;
+}
+
 .mainContainer{
   padding: 0px 20% 0px 20%;
 }
@@ -57,13 +89,21 @@ body{
 .submitForm{
   display: flex;
   justify-content: center;
+  border-top: 2px solid #7C444F;
+}
+
+.sendMsg{
+  margin: auto;
+  margin-left: 5px;
+  font-weight: 600;
 }
 
 .submitFormInner{
-  width: 70%;
+  padding: 10px;
+  width: 95%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -93,13 +133,13 @@ body{
   border: none;
   margin-top: 10px;
   padding: 10px;
-  background-color: #4e2830;
+  background-color: #3b1920;
   color: #d6bca9;
   outline: none;
 }
 
 .submitFormInner button:hover{
-  background-color: #552b34;
+  background-color: #3d1820;
 }
 
 .submitFormInner button:focus{
@@ -157,7 +197,10 @@ body{
   transition: 0.1s;
 }
 
-.animated:hover{
+.rounded{
+  border-radius: 10px;
+}
 
-
+.chatContainer{
+  background-color: #4e2830;
 }

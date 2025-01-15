@@ -1,6 +1,7 @@
 import {React, useEffect, useState} from 'react'
 import Tilt from 'react-parallax-tilt'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import axios from 'axios';
 
@@ -37,33 +38,34 @@ export default function Home() {
 
   return (
     <div class="mainContainer">
-        <div class="heading">
-          <Tilt tiltReverse={true} tiltMaxAngleX={0} >
-            <h1 class="dm-ita">Gemini API Bot</h1>
-          </Tilt>
-        </div> 
+      <div class="heading">
+        <Tilt tiltReverse={true}>
+          <h1 class="dm-ita rounded">Gemini API Bot</h1>
+        </Tilt>
+      </div>
 
-      {loading ? (
+      <div class="chatContainer rounded">
+        {loading ? (
 
-            <div id="responseBoxId" class="responseBox fade-in-response">
-              <ReactMarkdown children={response} />
-            </div>
+          <div id="responseBoxId" class="responseBox fade-in-response rounded raleway">
+            <ReactMarkdown children={response} remarkPlugins={[remarkGfm]}/>
+          </div>
 
-        ) : (
+          ) : (
 
-            <div class="loading">
-              <img src="icon2.png" alt="Loading..." />
-            </div>
+          <div class="loading">
+            <img src="icon2.png" alt="Loading..." />
+          </div>
 
-        )
-      }
-      <div class="submitForm fade-in">
+          )
+          }
 
-          <form onSubmit={sendMessage} class="submitFormInner">
-              <input type="text" value={prompt} onChange={({ target }) => setPrompt(target.value)} placeholder="type a message"/>
-              <button type="submit" class="sendMsg">Send</button>
-          </form>
-
+          <div class="submitForm fade-in">
+            <form onSubmit={sendMessage} class="submitFormInner">
+              <input class="rounded raleway" type="text" value={prompt} onChange={({ target }) => setPrompt(target.value)} placeholder="type a message"/>
+              <button type="submit" class="sendMsg rounded raleway">send</button>
+            </form>
+          </div>
       </div>
     </div>
   )
