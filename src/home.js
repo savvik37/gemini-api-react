@@ -18,7 +18,6 @@ export default function Home() {
         const msg = prompt 
         setLoading(false)
         const res = await axios.post(`https://gemini-api-react-2g37.vercel.app/sendmsg`, { prompt: msg })
-        console.log(res.data.response)
         setResponse(res.data.response)
         setPrompt("")
       }catch(err){
